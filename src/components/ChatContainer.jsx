@@ -9,7 +9,7 @@ export default function ChatContainer() {
     const userMsg = { role: "user", content: text };
     setMessages((prev) => [...prev, userMsg]);
 
-    const res = await fetch("http://api.yogeshramadoss.cloud/chat/invoke", {
+    const res = await fetch("https://api.yogeshramadoss.cloud/chat/invoke", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ input: text })

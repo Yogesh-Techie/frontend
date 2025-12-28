@@ -1,5 +1,5 @@
 export async function sendMessage(message) {
-  const response = await fetch("http://api.yogeshramadoss.cloud/chat/invoke", {
+  const response = await fetch("https://api.yogeshramadoss.cloud/chat/invoke", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
